@@ -7,7 +7,7 @@ which is licensed under the Apache License, Version 2.0.
 Significant modifications have been made, including (but not limited to):
 - API changes and breaking interface modifications
 - Architectural refactoring
-- Adaptation for use outside of Metal and Foundation
+- Adaptation for use outside of Metal related programming
 - Additional C++ abstractions and utilities
 
 Original work:
