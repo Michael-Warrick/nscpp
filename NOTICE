@@ -1,0 +1,20 @@
+This project contains a C++ interface to Apple Objective-C frameworks
+implemented using the Objective-C runtime C ABI.
+
+This project is based on and inspired by Apple’s metal-cpp project,
+which is licensed under the Apache License, Version 2.0.
+
+Significant modifications have been made, including (but not limited to):
+- API changes and breaking interface modifications
+- Architectural refactoring
+- Adaptation for use outside of Metal and Foundation
+- Additional C++ abstractions and utilities
+
+Original work:
+Copyright (C) Apple Inc.
+Licensed under the Apache License, Version 2.0
+
+Modifications:
+Copyright (C) 2026 Michael J. Warrick
+
+Licensed under the Apache License, Version 2.0
