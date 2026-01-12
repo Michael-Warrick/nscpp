@@ -11,11 +11,12 @@ enum StringEncoding : uintptr_t {
 
 class String : public Copying<String> {
 public:
-    static String* string(const char* pString, StringEncoding encoding);
-
     static String *alloc();
     String *init();
-    String *initWithFormatArguments(String *format, va_list args);
+    String *initWithFormat(String *format, va_list arguments);
+
+    static String *stringWithCString(const char *pString, StringEncoding encoding);
+    static String *stringWithUTF8String(const char *pString);
 
     [[nodiscard]] const char *cString(StringEncoding encoding) const;
 };
