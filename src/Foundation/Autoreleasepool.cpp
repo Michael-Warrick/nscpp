@@ -5,7 +5,7 @@
 namespace NS {
 
 AutoreleasePool *AutoreleasePool::alloc() {
-    return Object::alloc<AutoreleasePool>(objc_lookUpClass("NSAutoReleasePool"));
+    return Object::alloc<AutoreleasePool>(objc_lookUpClass("NSAutoreleasePool"));
 }
 
 
@@ -23,7 +23,7 @@ void AutoreleasePool::addObject(Object *pObject) const {
 }
 
 void AutoreleasePool::showPools() {
-    Object::sendMessage<void>(objc_lookUpClass("NSAutoReleasePool"), sel_registerName("showPools"));
+    Object::sendMessage<void>(objc_lookUpClass("NSAutoreleasePool"), sel_registerName("showPools"));
 }
 
 }
